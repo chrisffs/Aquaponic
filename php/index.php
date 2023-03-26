@@ -1,7 +1,6 @@
 <?php 
 $date = date("m/d/Y");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,56 +110,12 @@ $date = date("m/d/Y");
                         <div class="mb-[10px]">
                             <h4 class="font-medium font-inter text-base text-[#626262]">pH Level</h4>
                             <div id="lowpH" class="flex justify-between">
-                                <!-- <div>
-                                    <h1 class="font-inter font-semibold text-2xl">10.03</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">Today</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h1 class="font-inter font-semibold text-2xl">12.03</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">This Month</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
 
                         <div>
                             <h4 class="font-medium font-inter text-base text-[#626262]">Water Temperature</h4>
                             <div id="lowWT" class="flex justify-between">
-                                <!-- <div>
-                                    <h1 class="font-inter font-semibold text-2xl">31.12°C</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">Today</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h1 class="font-inter font-semibold text-2xl">34.12°C</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">This Month</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -169,56 +124,12 @@ $date = date("m/d/Y");
                         <div class="mb-[10px]">
                             <h4 class="font-medium font-inter text-base text-[#626262]">pH Level</h4>
                             <div id="highpH" class="flex justify-between">
-                                <!-- <div>
-                                    <h1 class="font-inter font-semibold text-2xl">10.03</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">Today</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h1 class="font-inter font-semibold text-2xl">12.03</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">This Month</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
 
                         <div>
                             <h4 class="font-medium font-inter text-base text-[#626262]">Water Temperature</h4>
                             <div id="highWT" class="flex justify-between">
-                                <!-- <div>
-                                    <h1 class="font-inter font-semibold text-2xl">31.12°C</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">Today</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h1 class="font-inter font-semibold text-2xl">34.12°C</h1>
-                                    <div class="flex">
-                                        <h4 class="font-semibold text-sm">This Month</h4>
-                                        <div class="ml-1 flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.66664 11.3333H5.3333V3.33335L1.66664 7.00001L0.719971 6.05335L5.99997 0.773346L11.28 6.05335L10.3333 7.00001L6.66664 3.33335V11.3333Z" fill="#4ECB71"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -235,74 +146,6 @@ $date = date("m/d/Y");
         <div class="flex space-x-[30px]">
             <!-- TABLE -->
             <div id="table" class="flex bg-white rounded-xl flex-col overflow-hidden">
-                <!-- <div class="flex justify-between px-5 py-4">
-                    <div>
-                        <h3 class="font-bold text-base">Records</h3>
-                    </div>
-                    <div class="flex">
-                        <div class="flex items-center px-3">
-                            <div class="mx-auto rounded-full bg-[#AC1A1A] w-[10px] h-[10px] mx-1"></div>
-                            <div>
-                                <h3 class="font-semibold text-xs">ACIDIC</h3>
-                            </div>
-                        </div>
-                        <div class="flex items-center px-3">
-                            <div class="mx-auto rounded-full bg-[#2E8C3D] w-[10px] h-[10px] mx-1"></div>
-                            <div>
-                                <h3 class="font-semibold text-xs">NEUTRAL</h3>
-                            </div>
-                        </div>
-                        <div class="flex items-center px-3">
-                            <div class="mx-auto rounded-full bg-[#2400FF] w-[10px] h-[10px] mx-1"></div>
-                            <div>
-                                <h3 class="font-semibold text-xs">ALKALINE</h3>
-                            </div>
-                        </div>
-                        <div class="flex items-center px-3">
-                            <div class="mx-auto bg-[#4ECB71] w-[4px] h-[20px] mx-1"></div>
-                            <div>
-                                <h3 class="font-semibold text-xs">NEW</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="inline-block min-w-full py-2 px-8">
-                        <div class="overflow-hidden overflow-y-auto h-[305px]">
-                            <table class="min-w-full text-left text-sm font-light">
-                                <thead class="bg-white border-b-3 font-semibold text-[#626262] sticky top-0">
-                                    <tr>
-                                        <th scope="col" class="px-5 py-2 text-xs">pH Value</th>
-                                        <th scope="col" class="px-5 py-2 text-xs">pH Diagnosis</th>
-                                        <th scope="col" class="px-5 py-2 text-xs">pH Status</th>
-                                        <th scope="col" class="px-5 py-2 text-xs">Water Temperature</th>
-                                        <th scope="col" class="px-5 py-2 text-xs">Date</th>
-                                        <th scope="col" class="px-5 py-2 text-xs">Time</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b-2 ">
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">7.50</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">Desirable Range of pH</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs"><div class="mx-auto rounded-full bg-[#2E8C3D] w-[10px] h-[10px]"></div></td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">23.5 °C</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">2023/30/1</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs border-r-4 border-indigo-500">16:19:29</td>
-                                    </tr>
-                                    <tr class="border-b-2">
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">9.2</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">No Reproduction & Slow Growth</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs"><div class="mx-auto rounded-full bg-[#2400FF] w-[10px] h-[10px]"></div></td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">23.5 °C</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">2023/30/1</td>
-                                        <td class="whitespace-nowrap px-5 py-4 font-inter font-medium text-xs">16:19:29</td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="w-[462px] grow">
                 <div class="bg-white rounded-lg p-[20px]">

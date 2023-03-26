@@ -132,13 +132,14 @@ function startRefresh() {
   $.get('table.php', function(data) {
     $('#table').html(data);
   });
-  updateChart();
+  updateChartwT();
+  updateChartpH();
   updatepH();
   updateWT();
 
 }
 
-function updateChart() {
+function updateChartpH() {
   $.post("phchart.php", function (data) {
 
     var pHValue = [];
@@ -153,6 +154,26 @@ function updateChart() {
     console.log(date[0]);
     for (let i = 0; i <= pHValue.length; i++) {
       lineGraph.data.datasets[0].data[date[i]] = pHValue[i]; 
+      lineGraph.update();
+    }
+  });
+}
+
+function updateChartwT() {
+  $.post("wTchart.php", function (data) {
+
+    var wTValue = [];
+    var date = [];
+    var time = [];
+
+    for (var i in data) {
+      wTValue.push(data[i].watertempAve);
+      date.push(data[i].weekday);
+      time.push(data[i].time);
+    }
+    console.log(date[0]);
+    for (let i = 0; i <= wTValue.length; i++) {
+      lineGraph.data.datasets[1].data[date[i]] = wTValue[i]; 
       lineGraph.update();
     }
   });
