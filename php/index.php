@@ -102,7 +102,7 @@ $date = date("m/d/Y");
                     <h3 id="pHStatus" class="font-inter font-medium text-black text-base">Water Temperature</h3>
                 </div>
             </div>
-            <div class="bg-white flex items-stretch grow rounded-xl p-[25px]">
+            <div class="bg-white flex items-stretch grow rounded-lg p-[25px]">
                 <div class="border-y-2 p-[10px] grow flex space-x-[5rem]">
                     
                     <div class="w-1/2">
@@ -145,7 +145,7 @@ $date = date("m/d/Y");
         </header>
         <div class="flex space-x-[30px]">
             <!-- TABLE -->
-            <div id="table" class="flex bg-white rounded-xl flex-col overflow-hidden">
+            <div id="table" class="flex bg-white rounded-lg flex-col overflow-hidden">
             </div>
             <div class="w-[462px] grow">
                 <div class="bg-white rounded-lg p-[20px]">
@@ -153,7 +153,7 @@ $date = date("m/d/Y");
                     <canvas id="lineGraph"></canvas>
                 </div>
                 <h2 class="font-bold text-base py-3">Recommended Action</h2>
-                <div class="relative bg-white rounded-lg ">
+                <div class="relative bg-white rounded-lg c-shadow">
                     <div class="absolute w-[20px] h-[20px] bg-[#4ECB71] rounded-full top-[9px] left-[10px]"></div>
                     <div class="py-[20px] px-[57px]">
                         <h1 class="font-semibold text-2xl">Add Water</h1>
