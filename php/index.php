@@ -20,8 +20,12 @@ $date = date("m/d/Y");
     <title>Aquaponic</title>
 </head>
 <body>
-<header class="border-b-4 mx-[13px] py-[5px]">
+<header class="border-b-4 mx-[13px] py-[5px] flex justify-between">
     <h2 class="font-bold text-xl">A<span class="text-[#007405]">q</span><span class="text-[#960000]">u</span><span class="text-[#001AFF]">a</span>ponic</h2>
+    <div id="signal" class="flex items-center">
+        
+    </div>
+    
 </header>
 <section class="mb-[25px]">
     <div class="container mx-auto">
@@ -156,8 +160,7 @@ $date = date("m/d/Y");
                 <div class="relative bg-white rounded-lg c-shadow">
                     <div class="absolute w-[20px] h-[20px] bg-[#4ECB71] rounded-full top-[9px] left-[10px]"></div>
                     <div class="py-[20px] px-[57px]">
-                        <h1 class="font-semibold text-2xl">Add Water</h1>
-                        <h3 class="font-medium text-xs">To maintain pH level and Water Level</h3>
+                        <h1 id="diagnosis" class="font-semibold text-2xl">Diagnosis</h1>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,9 @@ const char *password = "salvador12345"; // Wifi Password
 
 const char *host = "http://192.168.12.111"; // IP Address
 
+const int RSSI_MAX =-50;// define maximum strength of signal in dBm
+const int RSSI_MIN =-100;// define minimum strength of signal in dBm
+
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);   
 
@@ -29,13 +32,12 @@ void setup() {
     delay(500);
     Serial.print(".");
   }
-
+  
   Serial.println("");
   Serial.print("Connected to ");
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-
 }
 
 void loop() {
@@ -43,13 +45,14 @@ void loop() {
   HTTPClient http;
   WiFiClient client;
   
+  String signal = String(dBmtoPercentage(WiFi.RSSI()));
   String postData, Link, path;
   path = "/Aquaponic/httprequests/post.php";  
   if (Serial.available()) {
     int index = Serial.readString().indexOf(" ");
     String pHlevel = Serial.readString().substring(0,index);
     String waterTemp = Serial.readString().substring(index + 1,9);
-    postData = "watertemp=" + waterTemp + "&phvalue=" + pHlevel;
+    postData = "watertemp=" + waterTemp + "&signal=" + signal +  "&phvalue=" + pHlevel ;
   } 
   Link = host + path;
   
@@ -66,5 +69,18 @@ void loop() {
   http.end();
   delay(500);
 }
+
+int dBmtoPercentage(int dBm) {
+  int quality;
+  if(dBm <= RSSI_MIN) {
+    quality = 0;
+  } else if(dBm >= RSSI_MAX) {  
+    quality = 100;
+  } else {
+    quality = 2 * (dBm + 100);
+  }
+
+  return quality;
+} 
 
 

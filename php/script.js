@@ -132,6 +132,12 @@ function startRefresh() {
   $.get('table.php', function(data) {
     $('#table').html(data);
   });
+  $.get('diagnosis.php', function(data) {
+    $('#diagnosis').html(data);
+  });
+  $.get('signal.php', function(data) {
+    $('#signal').html(data);
+  });
   updateChartwT();
   updateChartpH();
   updatepH();

@@ -5,6 +5,16 @@ include "../php/conn.php";
 date_default_timezone_set('Asia/Manila');
 $d = date("Y-m-d");
 $t = date("H:i:s");
+
+if (!empty($_POST['signal'])) {
+    $signal_strength = $_POST["signal"];
+    $sql = "INSERT INTO `signal_tbl`(`signal`, `date`, `time`) VALUES ('".$signal_strength."', '".$d."', '".$t."')";
+    if ($conn->query($sql) === TRUE) {
+        echo "OK";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 if (!empty($_POST['watertemp'])) {
     $waterTemp = $_POST["watertemp"];
     $sql = "INSERT INTO waterreporttbl (watertemp, date, time) VALUES ('".$waterTemp."', '".$d."', '".$t."')";
@@ -45,7 +55,7 @@ if (!empty($_POST['phvalue'])) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
     $conn->close();
 }
+
 ?>

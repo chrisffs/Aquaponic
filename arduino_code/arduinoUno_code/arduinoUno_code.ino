@@ -3,7 +3,10 @@
 #include <DallasTemperature.h>
 
 SoftwareSerial espSerial(5, 6);
-#define ONE_WIRE_BUS 2
+#define ONE_WIRE_BUS 4
+
+int pH_Value; 
+float Voltage;
 
 // Setup a oneWire instance to communicate with any OneWire device
 OneWire oneWire(ONE_WIRE_BUS);	
@@ -26,6 +29,15 @@ void loop() {
   espSerial.println(WTsensorValue());
   delay(1000);
 }
+
+// String pHsensorValue() {
+//   pH_Value = analogRead(A0); 
+//   Voltage = pH_Value * (5.0 / 1023.0); 
+
+//   String phSend = String(Voltage);
+    
+//   return phSend;
+// }
 
 String pHsensorValue() {
   for(int i=0;i<10;i++) { 
